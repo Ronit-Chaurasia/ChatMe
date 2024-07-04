@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		AB6CB9F82C31F76F0045EFE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6CB9F72C31F76F0045EFE6 /* AppDelegate.swift */; };
 		AB6CB9FA2C31F76F0045EFE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6CB9F92C31F76F0045EFE6 /* SceneDelegate.swift */; };
-		AB6CB9FC2C31F76F0045EFE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6CB9FB2C31F76F0045EFE6 /* ViewController.swift */; };
+		AB6CB9FC2C31F76F0045EFE6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6CB9FB2C31F76F0045EFE6 /* LoginViewController.swift */; };
 		AB6CB9FF2C31F76F0045EFE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB6CB9FD2C31F76F0045EFE6 /* Main.storyboard */; };
 		AB6CBA012C31F7700045EFE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB6CBA002C31F7700045EFE6 /* Assets.xcassets */; };
 		AB6CBA042C31F7700045EFE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB6CBA022C31F7700045EFE6 /* LaunchScreen.storyboard */; };
+		AB6EA5552C35D746008A4104 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB6EA5542C35D746008A4104 /* GoogleService-Info.plist */; };
+		AB6EA5582C372F55008A4104 /* FirebaseUserListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6EA5572C372F55008A4104 /* FirebaseUserListener.swift */; };
+		AB6EA55A2C37313D008A4104 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6EA5592C37313D008A4104 /* UserModel.swift */; };
+		AB6EA55C2C37402C008A4104 /* FirebaseCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6EA55B2C37402C008A4104 /* FirebaseCollectionReference.swift */; };
+		E4D5087CB31DB87A5281607F /* Pods_ChatMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09883BBA3C5B38C1149ECEA /* Pods_ChatMe.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D8A7E76EDD34ECBC8CAF84E /* Pods-ChatMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatMe.release.xcconfig"; path = "Target Support Files/Pods-ChatMe/Pods-ChatMe.release.xcconfig"; sourceTree = "<group>"; };
 		AB6CB9F42C31F76F0045EFE6 /* ChatMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB6CB9F72C31F76F0045EFE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB6CB9F92C31F76F0045EFE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AB6CB9FB2C31F76F0045EFE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AB6CB9FB2C31F76F0045EFE6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AB6CB9FE2C31F76F0045EFE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB6CBA002C31F7700045EFE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB6CBA032C31F7700045EFE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB6CBA052C31F7700045EFE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB6EA5542C35D746008A4104 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AB6EA5572C372F55008A4104 /* FirebaseUserListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUserListener.swift; sourceTree = "<group>"; };
+		AB6EA5592C37313D008A4104 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		AB6EA55B2C37402C008A4104 /* FirebaseCollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseCollectionReference.swift; sourceTree = "<group>"; };
+		B09883BBA3C5B38C1149ECEA /* Pods_ChatMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5D3DAD9319D1CB500C090A6 /* Pods-ChatMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatMe.debug.xcconfig"; path = "Target Support Files/Pods-ChatMe/Pods-ChatMe.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4D5087CB31DB87A5281607F /* Pods_ChatMe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		181F4943D96EE91F5C0C36C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B09883BBA3C5B38C1149ECEA /* Pods_ChatMe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7486B9C04D20B78FAC2ED3BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5D3DAD9319D1CB500C090A6 /* Pods-ChatMe.debug.xcconfig */,
+				6D8A7E76EDD34ECBC8CAF84E /* Pods-ChatMe.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AB6CB9EB2C31F76F0045EFE6 = {
 			isa = PBXGroup;
 			children = (
 				AB6CB9F62C31F76F0045EFE6 /* ChatMe */,
+				AB6EA54F2C35D2E8008A4104 /* SupportFiles */,
 				AB6CB9F52C31F76F0045EFE6 /* Products */,
+				7486B9C04D20B78FAC2ED3BF /* Pods */,
+				181F4943D96EE91F5C0C36C6 /* Frameworks */,
+				AB6EA5542C35D746008A4104 /* GoogleService-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +90,57 @@
 		AB6CB9F62C31F76F0045EFE6 /* ChatMe */ = {
 			isa = PBXGroup;
 			children = (
-				AB6CB9F72C31F76F0045EFE6 /* AppDelegate.swift */,
-				AB6CB9F92C31F76F0045EFE6 /* SceneDelegate.swift */,
-				AB6CB9FB2C31F76F0045EFE6 /* ViewController.swift */,
-				AB6CB9FD2C31F76F0045EFE6 /* Main.storyboard */,
-				AB6CBA002C31F7700045EFE6 /* Assets.xcassets */,
-				AB6CBA022C31F7700045EFE6 /* LaunchScreen.storyboard */,
+				AB6EA5562C372EC1008A4104 /* FirebaseMethods */,
+				AB6EA5522C35D351008A4104 /* Models */,
+				AB6EA5502C35D30D008A4104 /* Views */,
+				AB6EA5532C35D360008A4104 /* ViewModel */,
 				AB6CBA052C31F7700045EFE6 /* Info.plist */,
 			);
 			path = ChatMe;
+			sourceTree = "<group>";
+		};
+		AB6EA54F2C35D2E8008A4104 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				AB6CB9F72C31F76F0045EFE6 /* AppDelegate.swift */,
+				AB6CB9F92C31F76F0045EFE6 /* SceneDelegate.swift */,
+				AB6CBA002C31F7700045EFE6 /* Assets.xcassets */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		AB6EA5502C35D30D008A4104 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AB6CB9FB2C31F76F0045EFE6 /* LoginViewController.swift */,
+				AB6CB9FD2C31F76F0045EFE6 /* Main.storyboard */,
+				AB6CBA022C31F7700045EFE6 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AB6EA5522C35D351008A4104 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AB6EA5592C37313D008A4104 /* UserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AB6EA5532C35D360008A4104 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AB6EA5562C372EC1008A4104 /* FirebaseMethods */ = {
+			isa = PBXGroup;
+			children = (
+				AB6EA5572C372F55008A4104 /* FirebaseUserListener.swift */,
+				AB6EA55B2C37402C008A4104 /* FirebaseCollectionReference.swift */,
+			);
+			path = FirebaseMethods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB6CBA082C31F7700045EFE6 /* Build configuration list for PBXNativeTarget "ChatMe" */;
 			buildPhases = (
+				41E170DC8EDA08DF2ED8DE4F /* [CP] Check Pods Manifest.lock */,
 				AB6CB9F02C31F76F0045EFE6 /* Sources */,
 				AB6CB9F12C31F76F0045EFE6 /* Frameworks */,
 				AB6CB9F22C31F76F0045EFE6 /* Resources */,
+				A30382A8F6FFA1E8CE4C3CFD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB6CBA042C31F7700045EFE6 /* LaunchScreen.storyboard in Resources */,
+				AB6EA5552C35D746008A4104 /* GoogleService-Info.plist in Resources */,
 				AB6CBA012C31F7700045EFE6 /* Assets.xcassets in Resources */,
 				AB6CB9FF2C31F76F0045EFE6 /* Main.storyboard in Resources */,
 			);
@@ -133,14 +212,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		41E170DC8EDA08DF2ED8DE4F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChatMe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A30382A8F6FFA1E8CE4C3CFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatMe/Pods-ChatMe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatMe/Pods-ChatMe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChatMe/Pods-ChatMe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AB6CB9F02C31F76F0045EFE6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB6CB9FC2C31F76F0045EFE6 /* ViewController.swift in Sources */,
+				AB6EA55C2C37402C008A4104 /* FirebaseCollectionReference.swift in Sources */,
+				AB6CB9FC2C31F76F0045EFE6 /* LoginViewController.swift in Sources */,
 				AB6CB9F82C31F76F0045EFE6 /* AppDelegate.swift in Sources */,
 				AB6CB9FA2C31F76F0045EFE6 /* SceneDelegate.swift in Sources */,
+				AB6EA55A2C37313D008A4104 /* UserModel.swift in Sources */,
+				AB6EA5582C372F55008A4104 /* FirebaseUserListener.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,57 +411,73 @@
 		};
 		AB6CBA092C31F7700045EFE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5D3DAD9319D1CB500C090A6 /* Pods-ChatMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UA52WBJ6ZK;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChatMe/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ronitchaurasia.ChatMe;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ronitchaurasia.ChatMe.xyz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		AB6CBA0A2C31F7700045EFE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D8A7E76EDD34ECBC8CAF84E /* Pods-ChatMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UA52WBJ6ZK;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChatMe/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ronitchaurasia.ChatMe;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ronitchaurasia.ChatMe.xyz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

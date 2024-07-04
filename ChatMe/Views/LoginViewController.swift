@@ -50,6 +50,8 @@ class LoginViewController: UIViewController {
         if verifyUserDetails("password"){
             print("have data for pasword reset")
         }else{
+            ProgressHUD.colorAnimation = UIColor.red
+            ProgressHUD.colorHUD = UIColor.systemGray4
             ProgressHUD.failed("Email is Required")
         }
     }
@@ -58,8 +60,9 @@ class LoginViewController: UIViewController {
         if verifyUserDetails("password"){
             print("have data for pasword reset")
         }else{
+            ProgressHUD.colorAnimation = UIColor.red
+            ProgressHUD.colorHUD = UIColor.systemGray4
             ProgressHUD.failed("Email is Required")
-            
         }
     }
     

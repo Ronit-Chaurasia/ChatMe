@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "7DAA3453-3DBE-4589-A36C-6977196AA4A9"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "41BFE859-62AB-4BDD-9474-72458435F641"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChatMe/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
+            landmarkName = "textfieldDidChange(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "41BFE859-62AB-4BDD-9474-72458435F641 - 595832c50ca2efb6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ChatMe.LoginViewController.textfieldDidChange(__C.UITextField) -&gt; ()"
+                  moduleName = "ChatMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ronitchaurasia/Documents/ChatMe/ChatMe/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "123"
+                  endingLineNumber = "123"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "41BFE859-62AB-4BDD-9474-72458435F641 - 595832c50ca2efb6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ChatMe.LoginViewController.textfieldDidChange(__C.UITextField) -&gt; ()"
+                  moduleName = "ChatMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ronitchaurasia/Documents/ChatMe/ChatMe/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "123"
+                  endingLineNumber = "123"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B41D3608-594D-47DE-AF10-46C788830E85"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChatMe/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "addTextfieldDelegates()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B41D3608-594D-47DE-AF10-46C788830E85 - d3084108e3d54bde"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ChatMe.LoginViewController.addTextfieldDelegates() -&gt; ()"
+                  moduleName = "ChatMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ronitchaurasia/Documents/ChatMe/ChatMe/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "117"
+                  endingLineNumber = "117"
+                  offsetFromSymbolStart = "288">
+               </Location>
+               <Location
+                  uuid = "B41D3608-594D-47DE-AF10-46C788830E85 - d3084108e3d54bde"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ChatMe.LoginViewController.addTextfieldDelegates() -&gt; ()"
+                  moduleName = "ChatMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ronitchaurasia/Documents/ChatMe/ChatMe/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "117"
+                  endingLineNumber = "117"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
