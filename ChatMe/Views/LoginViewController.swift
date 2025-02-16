@@ -37,28 +37,29 @@ class LoginViewController: UIViewController {
     // MARK: IBActions
     
     @IBAction func loginButtonTapped(_ sender: Any) {
-        if verifyUserDetails(signupTapped ? "register" : "login"){
+        if verifyUserDetails(isRegisterScreen ? "register" : "login"){
             print("have data for login/Register")
+            isRegisterScreen ? registerUser() : loginUser()
         }else{
-            ProgressHUD.colorAnimation = UIColor.red
-            ProgressHUD.colorHUD = UIColor.systemGray4
-            ProgressHUD.failed("All fields are required")
+            showFailure(message: "All fields are required")
         }
     }
     
     @IBAction func forgotPasswordTapped(_ sender: Any) {
         if verifyUserDetails("password"){
-            print("have data for pasword reset")
+            print("have data for password reset")
+            viewModel.resetPasswordForUser(email: emailTextField.text!)
         }else{
             ProgressHUD.colorAnimation = UIColor.red
             ProgressHUD.colorHUD = UIColor.systemGray4
-            ProgressHUD.failed("Email is Required")
+            showFailure(message: "Email is Required")
         }
     }
     
     @IBAction func resendEmailTapped(_ sender: Any) {
         if verifyUserDetails("password"){
-            print("have data for pasword reset")
+            print("have data for email verification resend")
+            viewModel.resendVerificationEmail()
         }else{
             ProgressHUD.colorAnimation = UIColor.red
             ProgressHUD.colorHUD = UIColor.systemGray4
@@ -67,17 +68,17 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func signupButtonTapped(_ sender: Any) {
-        if signupTapped == false{
+        isRegisterScreen.toggle()
+        if isRegisterScreen == true{
             setRegisterUI()
-            signupTapped.toggle()
         }else{
             initialConfiguration()
-            signupTapped.toggle()
         }
     }
     
     // MARK: Stored properties
-    var signupTapped = false
+    var isRegisterScreen = false
+    var viewModel = LoginViewModel()
     
     // MARK: View Lifecycle Methods
     
@@ -85,9 +86,19 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .black
+        viewModel.statusDelegate = self
+        viewModel.navigationDelegate = self
+        
         initialConfiguration()
         addTextfieldDelegates()
         addTapGesture()
+        
+        loginButton.layer.cornerRadius = 10
+        ProgressHUD.colorAnimation = UIColor.red
+        ProgressHUD.colorHUD = UIColor.systemGray4
+        viewModel.showResendEmail = {
+            self.resendEmailButton.isHidden = false
+        }
     }
     
     // MARK: Configuration Methods
@@ -99,7 +110,7 @@ class LoginViewController: UIViewController {
         accountLabel.text = "Don't have an account?"
         
         loginButton.setTitle("Log In", for: .normal)
-        loginButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+        // loginButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 40)
         signupButton.setTitle("Sign Up", for: .normal)
         
         // Animate Confirm password view
@@ -117,12 +128,54 @@ class LoginViewController: UIViewController {
         signupButton.setTitle("Log In", for: .normal)
         welcomeBackLabel.text = "Welcome Onboard !"
         forgotPasswordButton.isHidden = true
+        loginButton.setTitle("Register", for: .normal)
     
         UIView.animate(withDuration: 0.3, animations: {
             self.confirmPasswordStackView.isHidden = false
         }){ _ in
             self.confirmPasswordStackView.alpha = 1.0
         }
+    }
+}
+
+// MARK: Helper Methods
+extension LoginViewController: SuccessAndFailureProtocol, NavigationProtocol{
+
+    func presentController() {
+        let mainView = UIStoryboard(name: "Main", bundle: nil)
+        guard let vc = mainView.instantiateViewController(identifier: "MainView") as? UITabBarController else{ return }
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true)
+    }
+    
+    
+    func showSuccess(message: String) {
+        ProgressHUD.success(message)
+    }
+    
+    func showFailure(message: String) {
+        ProgressHUD.failed(message)
+    }
+    
+    private func verifyUserDetails(_ page: String) -> Bool{
+        switch page{
+            case "login":
+                return emailTextField.hasText && passwordTextField.hasText
+                
+            case "register":
+                return emailTextField.hasText && passwordTextField.hasText && confirmPasswordTextField.hasText
+                
+            default:
+                return emailTextField.hasText
+        }
+    }
+    
+    private func registerUser(){
+        viewModel.registerUser(email: emailTextField.text!, password: passwordTextField.text!, confirmPassword: confirmPasswordTextField.text!)
+    }
+    
+    private func loginUser(){
+        viewModel.loginUser(email: emailTextField.text!, password: passwordTextField.text!)
     }
 }
 
@@ -136,15 +189,21 @@ extension LoginViewController: UITextFieldDelegate{
     }
     
     @objc private func textfieldDidChange(_ textField: UITextField){
-        updatePlaceholderLabels(textField)
+        
+        UIView.animate(withDuration: 2, animations: {
+            self.updatePlaceholderLabels(textField)
+        })
     }
     
     private func updatePlaceholderLabels(_ textField: UITextField){
         switch textField{
+            
             case emailTextField:
                 emailLabel.text = textField.hasText ? "Email" : ""
+    
             case passwordTextField:
                 passwordLabel.text = textField.hasText ? "Password" : ""
+            
             default:
                 confirmPasswordLabel.text = textField.hasText ? "Confirm Password" : ""
         }
@@ -161,21 +220,5 @@ extension LoginViewController{
     
     @objc private func dismissKeyboard(){
         view.endEditing(true)
-    }
-}
-
-// MARK: Helper Methods
-extension LoginViewController{
-    private func verifyUserDetails(_ field: String) -> Bool{
-        switch field{
-        case "login":
-            return emailTextField.hasText && passwordTextField.hasText
-            
-        case "register":
-            return emailTextField.hasText && passwordTextField.hasText && confirmPasswordTextField.hasText
-            
-        default:
-            return emailTextField.hasText
-        }
     }
 }

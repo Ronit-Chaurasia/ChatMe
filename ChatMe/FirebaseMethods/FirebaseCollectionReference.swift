@@ -5,8 +5,9 @@
 //  Created by Ronit Chaurasia on 05/07/24.
 //
 
-import FirebaseFirestore
+import Firebase
 
+// Collections created by me on firebase
 enum Collections: String{
     case user
     case recent

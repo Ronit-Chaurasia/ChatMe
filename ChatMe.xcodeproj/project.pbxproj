@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB3DCB652C37E83300AF5C61 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3DCB642C37E83300AF5C61 /* Utils.swift */; };
 		AB6CB9F82C31F76F0045EFE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6CB9F72C31F76F0045EFE6 /* AppDelegate.swift */; };
 		AB6CB9FA2C31F76F0045EFE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6CB9F92C31F76F0045EFE6 /* SceneDelegate.swift */; };
 		AB6CB9FC2C31F76F0045EFE6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6CB9FB2C31F76F0045EFE6 /* LoginViewController.swift */; };
@@ -17,11 +18,13 @@
 		AB6EA5582C372F55008A4104 /* FirebaseUserListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6EA5572C372F55008A4104 /* FirebaseUserListener.swift */; };
 		AB6EA55A2C37313D008A4104 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6EA5592C37313D008A4104 /* UserModel.swift */; };
 		AB6EA55C2C37402C008A4104 /* FirebaseCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6EA55B2C37402C008A4104 /* FirebaseCollectionReference.swift */; };
+		ABDD27422C5F8CD4001A6E65 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDD27412C5F8CD4001A6E65 /* LoginViewModel.swift */; };
 		E4D5087CB31DB87A5281607F /* Pods_ChatMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09883BBA3C5B38C1149ECEA /* Pods_ChatMe.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6D8A7E76EDD34ECBC8CAF84E /* Pods-ChatMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatMe.release.xcconfig"; path = "Target Support Files/Pods-ChatMe/Pods-ChatMe.release.xcconfig"; sourceTree = "<group>"; };
+		AB3DCB642C37E83300AF5C61 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		AB6CB9F42C31F76F0045EFE6 /* ChatMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB6CB9F72C31F76F0045EFE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB6CB9F92C31F76F0045EFE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +37,7 @@
 		AB6EA5572C372F55008A4104 /* FirebaseUserListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUserListener.swift; sourceTree = "<group>"; };
 		AB6EA5592C37313D008A4104 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		AB6EA55B2C37402C008A4104 /* FirebaseCollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseCollectionReference.swift; sourceTree = "<group>"; };
+		ABDD27412C5F8CD4001A6E65 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		B09883BBA3C5B38C1149ECEA /* Pods_ChatMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D3DAD9319D1CB500C090A6 /* Pods-ChatMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatMe.debug.xcconfig"; path = "Target Support Files/Pods-ChatMe/Pods-ChatMe.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +71,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		AB3DCB632C37E80C00AF5C61 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AB3DCB642C37E83300AF5C61 /* Utils.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 		AB6CB9EB2C31F76F0045EFE6 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +102,7 @@
 		AB6CB9F62C31F76F0045EFE6 /* ChatMe */ = {
 			isa = PBXGroup;
 			children = (
+				AB3DCB632C37E80C00AF5C61 /* Utilities */,
 				AB6EA5562C372EC1008A4104 /* FirebaseMethods */,
 				AB6EA5522C35D351008A4104 /* Models */,
 				AB6EA5502C35D30D008A4104 /* Views */,
@@ -130,6 +143,7 @@
 		AB6EA5532C35D360008A4104 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				ABDD27412C5F8CD4001A6E65 /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -262,6 +276,8 @@
 				AB6EA55C2C37402C008A4104 /* FirebaseCollectionReference.swift in Sources */,
 				AB6CB9FC2C31F76F0045EFE6 /* LoginViewController.swift in Sources */,
 				AB6CB9F82C31F76F0045EFE6 /* AppDelegate.swift in Sources */,
+				AB3DCB652C37E83300AF5C61 /* Utils.swift in Sources */,
+				ABDD27422C5F8CD4001A6E65 /* LoginViewModel.swift in Sources */,
 				AB6CB9FA2C31F76F0045EFE6 /* SceneDelegate.swift in Sources */,
 				AB6EA55A2C37313D008A4104 /* UserModel.swift in Sources */,
 				AB6EA5582C372F55008A4104 /* FirebaseUserListener.swift in Sources */,
